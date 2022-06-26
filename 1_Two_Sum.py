@@ -4,15 +4,20 @@ def twoSum(nums, target):
     :type target: int
     :rtype: List[int]
     """
-    i = 0
+    # Solution with using two for loops
     for i in range(0, len(nums)):
-        j = i + 1
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
                 return [i, j]
-            else:
-                j = j + 1
-        i = i + 1
+
+    # Solution with using Map
+    prevMap = {}
+    for i, n in enumerate(nums):
+        diff = target - n
+        if diff in prevMap:
+            return [prevMap[diff], i]
+        prevMap[n] = i
+        return
 
 if __name__ == '__main__':
     print(twoSum([2,7,11,15], 9))
