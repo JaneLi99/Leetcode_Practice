@@ -3,7 +3,6 @@ def isPalindrome(x):
     :type x: int
     :rtype: bool
     """
-
     if x < 0:
         return False
     else:
@@ -11,9 +10,11 @@ def isPalindrome(x):
         list_new = []
         for i in range(len(list_x) - 1, -1, -1):
             list_new.append(list_x[i])
+
         str1 = [str(i) for i in list_new]
         str2 = ''.join(str1)
         str3 = int(str2)
+
         if str3 > pow(2, 31) - 1 or str3 < pow(-2, 31):
             return False
         elif str3 == x:
