@@ -9,8 +9,6 @@ def groupAnagrams(strs):
 
     return [l for l in lookup.values()]
 
-
-
 if __name__ == '__main__':
     print(groupAnagrams(strs = ["eat","tea","tan"]))
     print(groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"]))
