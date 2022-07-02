@@ -28,10 +28,7 @@ def fourSum(nums, target):
                     left += 1
                 else:
                     right -= 1
-    # print(result)
     return result
-
-
 
 if __name__ == '__main__':
     fourSum(nums = [1,0,-1,0,-2,2], target = 0)

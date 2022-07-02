@@ -1,4 +1,3 @@
-
 def myAtoi(s):
     max_int = 2 ** 31 - 1
     min_int = - 2 ** 31

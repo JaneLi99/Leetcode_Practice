@@ -11,6 +11,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+class Solution:
     def mergeKLists_linkedlist(self, lists):
         if not lists or len(lists) == 0:
             return None

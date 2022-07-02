@@ -1,4 +1,3 @@
-
 def maxArea(height):
 
     # area_list = []

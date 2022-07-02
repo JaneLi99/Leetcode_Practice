@@ -9,6 +9,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+class Solution:
     def mergeTwoLists(self, list1, list2):
         """
         :type list1: Optional[ListNode]

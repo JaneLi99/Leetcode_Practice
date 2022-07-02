@@ -12,8 +12,6 @@ def generateParenthesis(n):
     result = list(res)
     return result
 
-
-
 if __name__ == '__main__':
     generateParenthesis(3)
     generateParenthesis(1)
