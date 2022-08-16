@@ -18,13 +18,6 @@ public:
     }
 };
 
-// void printVector(vector<int> & vec) {
-//         for (int i: vec) {
-//             cout << i << ' ';
-//         }
-//     cout << endl;
-// }
-
 int main(){
     Solution s;
     vector<int> nums = {3,2,1,5,6,4};
