@@ -1,12 +1,14 @@
 def wordBreak(s, wordDict):
-    s = s.replace(s[:4], "")
-    print(s)
-    return
+    dp = [False for _ in range(len(s) + 1)]
+    dp[len(s)] = True
 
-
-class Solution:
-    def wordBreak(self, s, wordDict):
-        return
+    for i in range(len(s) - 1, -1, -1):
+        for word in wordDict:
+            if (i + len(word)) <= len(s) and s[i:i + len(word)] == word:
+                dp[i] = dp[i + len(word)]
+                if dp[i]:
+                    break
+    return dp[0]
 
 if __name__ == '__main__':
     print(wordBreak(s = "leetcode", wordDict = ["leet","code"]))
