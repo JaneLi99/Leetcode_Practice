@@ -1,4 +1,5 @@
 """
+Tangerine OA 1
 Write a function that given a string S of letter "L" and "R", denoting the types of shoes in line (left and right),
 returns the maximum number of intervals such that each interval contains an equal number of left and right shoes.
 For example, given S = "RLRRLLRLRRLL", the function shoulf return 4, because S can be split into intervals: "RL",
